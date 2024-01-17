@@ -33,6 +33,10 @@ html, body {
   border: 2px solid rgba(60, 62, 74, 0.94);
   border-radius: 0px;
   overflow: auto;
+  padding-bottom: 0px;
+}
+#ct-footer {
+  text-align: center;
 }
  canvas {
     width: 100%;

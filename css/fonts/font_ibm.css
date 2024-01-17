@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'pxplus_ibm_vga8regular';
+    src: url('/css/fonts/PxPlus_IBM_VGA8.woff') format('woff');
+    src: url('/css/fonts/PxPlus_IBM_VGA8.ttf') format('truetype');
+    font-weight: normal;
+
+}
+/* @font-face {
+    font-family: 'pc98';
+    src: url('/css/PC_9800.woff2') format('woff2'),
+	url('/css/PC_9800.woff') format('woff'),
+	url('/css/pc-9800.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: "pixel_nes";
+    src: url("/css/fonts/Pixel_NES.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "perfect_dos_vga";
+    src: url("/css/fonts/Perfect_DOS_VGA.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

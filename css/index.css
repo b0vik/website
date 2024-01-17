@@ -1,0 +1,171 @@
+html, body {
+    background-color: rgb(40, 42, 54);
+    line-height: 1.2;
+  font-family: "perfect_dos_vga";
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+.decode-button {
+    background-color: rgba(40, 42, 54, 0.94); /* Match the theme selector background */
+    color: white; /* Text color */
+    padding: 2px 4px; /* Padding inside the button */
+    border: 2px solid rgba(25, 25, 25, 0.94); /* Border similar to theme selector */
+    border-radius: 0px; /* Border radius to match theme selector */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.decode-button:hover {
+    background-color: rgba(68, 71, 90, 0.94); /* Slightly lighter background on hover */
+    border-color: white; /* White border on hover */
+}
+#centered-text {
+  position: relative;
+  max-width: calc(100% - 80px); /* Maximum width with 40px margin on each side */
+  width: 60rem; /* Make the width scale with the viewport */
+  margin: 40px auto; /* Vertical margin of 40px and horizontal auto margin for centering */
+  z-index: 5;
+  background-color: rgba(68, 71, 90, 0.94);
+  color: #d0d0d0;
+  padding: 20px;
+  border: 2px solid rgba(60, 62, 74, 0.94);
+  border-radius: 0px;
+  overflow: auto;
+}
+ canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+   }
+ul {
+    list-style-type: square;
+   }
+#specs-list {
+    list-style-type: none;
+    list-style: none;
+    padding-left: 1.7em;
+}
+#theme-selector {
+position: absolute;
+bottom: 20px;
+right: 20px;
+background-color: rgba(40, 42, 54, 0.94);
+max-width: calc(100% - 80px); /* Maximum width with 40px margin on each side */
+
+
+color: white;
+padding: 20px;
+border: 2px solid rgba(25, 25, 25, 0.94);
+border-radius: 0px;
+}
+#icon-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0;
+color: white;
+border: none;
+border-radius: 0px;
+margin-top: 10px; /* Add this line */
+}
+.image-container {
+position: relative;
+display: inline-block;
+
+}
+.image-container img {
+position: relative;
+z-index: 2; /* Ensure the image is above the pseudo-element */
+
+}
+
+.image-container::after {
+content: "";
+position: absolute;
+top: -2px;
+left: -2px;
+right: -2px;
+bottom: 3px;
+border: 2px solid grey;
+z-index: 1;
+transition: border-color 0.3s ease;
+}
+
+#icon-row img {
+height: auto;
+width: auto;
+
+}
+
+/* Add this to your CSS */
+#theme-label {
+font-size: 1em;
+margin-left: 10px;
+}
+
+#theme-switch {
+appearance: none;
+background-color: #ccc;
+border: none;
+cursor: pointer;
+height: 20px;
+width: 40px;
+outline: none;
+transition: background-color 0.3s ease;
+}
+
+#theme-switch:checked {
+background-color: #4caf50;
+}
+
+
+ 
+ .image-container:hover::after {
+    border-color: white;
+ }
+
+/* Style for larger screens */
+@media screen and (min-width: 768px) {
+#theme-selector {
+position: fixed;
+bottom: 20px;
+right: 20px;
+}
+}
+
+/* Style for smaller screens */
+@media screen and (max-width: 767px) {
+#theme-selector {
+position: relative;
+bottom: auto;
+left: auto;
+right: auto;
+width: 60rem;
+z-index: 5;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+margin-bottom: 40px;
+overflow: auto;
+}
+}
+
+a:link {
+   color: #7f8c8d;
+   
+ }
+ a:visited {
+   color: #646464;
+ }
+ a:hover {
+   color: #2d8653;
+ }
+ a:active {
+   color: #ff0000;
+ }
